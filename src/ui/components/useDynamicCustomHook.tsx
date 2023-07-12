@@ -98,9 +98,7 @@ const useDynamicComponentHook = () => {
         2
       );
       dispatch({ type: "mockResponse", payload: prettified });
-    } catch (err) {
-      console.error(err);
-    }
+    } catch (err) {}
   }, [state.mockResponse]);
 
   const handleToggleEnabled = useCallback(() => {
